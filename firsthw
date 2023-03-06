@@ -1,0 +1,27 @@
+<!-- 버튼을 눌르면 임의의 div안에 Hello World!가 입력되도록 하시오. 이때 버튼의 색깔은 파란색이며, 버튼의 크기는
+   너비 300px, 높이 200px이다. padding은 적당히 주면서, 기존 버튼 css를 검색하면서 따라하시오.
+   (파란색은 color : blue 형식이 아닌 헥사 코드 색깔을 이용하세요.) -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .button{
+                background-color: #0000FF ; 
+                width : 300px ;
+                height : 200px ;
+                padding : 10px ;
+            }
+        </style>
+    </head>
+    <body>
+
+        <p id = "helloWorld"> 버튼 클릭 시 hello world로 출력</p>
+        <button class="button" onclick=doClick() >버튼</button>
+
+        <script>
+            function doClick(){
+                document.getElementById("helloWorld").innerHTML = "Hello World!"
+            }
+        </script>
+    </body>
+</html>
