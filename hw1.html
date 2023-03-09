@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .button {
+            background-color: #0000FF;
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="helloWorld"> 버튼 클릭 시 hello world로 출력</p>
+    <button class="button" onclick=doClick()>버튼</button>
+
+    <script>
+        function doClick() {
+            document.getElementById("helloWorld").innerHTML = "Hello World!"
+        }
+    </script>
+</body>
+
+</html>
